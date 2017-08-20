@@ -40,14 +40,14 @@
 }
 
 .content{
-  padding: 10rpx;
+  padding: 20rpx;
 }
 .details-cont {
   font-size: 30rpx;
 }
 
 .comments-cont{
-  font-size: 38rpx;
+  font-size: 30rpx;
 }
 .comments-cont .score{
   padding:20rpx;

@@ -6,6 +6,11 @@ Page({
     orderShow: false,
     commentShow: false
   },
+  userInfoClick() {
+    wx.navigateTo({
+      url: './../userInfo/userInfo'
+    })
+  },
   syncClick() {
 
   },

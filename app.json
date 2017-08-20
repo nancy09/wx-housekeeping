@@ -6,7 +6,9 @@
     "pages/detailList/detailList",
     "pages/detailInfo/detailInfo",
     "pages/booking/booking",
-    "pages/introduction/introduction"
+    "pages/introduction/introduction",
+    "pages/orderList/orderList",
+    "pages/userInfo/userInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

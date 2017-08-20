@@ -18,6 +18,7 @@ Page({
     })
   },
   callbtnClick() {
+    let that = this;
     wx.makePhoneCall({
       phoneNumber: that.data.phone
     })

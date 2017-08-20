@@ -1,0 +1,48 @@
+<!--usercenter.wxml-->
+<form class="form" bindsubmit="formSubmit">
+  <view class="section userinfo-section">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="section">
+    <view class="section-hd">姓名</view>
+    <view class="section-bd">
+      <input name="name" value="{{name}}" placeholder=""/>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section-hd">性别</view>
+    <view class="section-bd">
+      <radio-group class="radio-group" bindchange="sexChange">
+        <label class="radio">
+          <radio value="0" checked/>男
+        </label>
+        <label class="radio">
+          <radio value="1"/>女
+        </label>
+      </radio-group>
+      <input name="sex" value="{{sex}}" hidden/>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section-hd">手机号</view>
+    <view class="section-bd">
+      <input name="phone" value="{{phone}}" placeholder="请正确填写手机号"/>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section-hd">地址</view>
+    <view class="section-bd">
+      <input name="address" value="{{address}}" placeholder="18个字以内"/>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section-hd">详细介绍下自己</view>
+    <view class="section-bd">
+      <textarea name="intro" value="{{intro}}" placeholder="100个字以内"/>
+    </view>
+  </view>
+  <view class="ft-btn">
+    <button formType="submit" class="send-btn">提交保存</button>
+  </view>
+</form>
