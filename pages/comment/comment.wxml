@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="comment-page">
+  <form class="form" bindsubmit="formSubmit">
+    <view class="section">
+      <text class="title">评分</text>
+      <view class="star-box">
+      </view>
+      <input name="score" value="{{score}}" hidden/>
+    </view>
+    <view class="section-textarea">
+      <textarea name="content" placeholder="写点什么吧..." />
+    </view>
+    <view class="section-image">
+      <image class="image-item delete-btn" src="{{item}}" wx:for="{{imageList}}" wx:for-item="item" wx:key="unique" data-src="{{item}}" bindtap="deleteImage"></image>
+      <view class="image-item add-btn" bindtap="addImage" wx:if="{{imageList.length < 3}}"></view>
+    </view>
+    <view class="ft-btn">
+      <button formType="submit" class="send-btn">提交保存</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,35 @@
+<!--logs.wxml-->
+<view class="page">
+  <view class="hd">
+    <view class="notice">{{notice}}</view>
+    <view class="my-address" bindtap="openMap">地图定位</view>
+  </view>
+  <view class="bd">
+    <view class="tab">
+      <view class="tab-item {{currentTab === '0' ? 'current' : ''}}" data-index="0" bindtap="tabClick">
+        <text>详情</text>
+      </view>
+      <view class="tab-item {{currentTab === '1' ? 'current' : ''}}" data-index="1" bindtap="tabClick">
+        <text>点评</text>
+      </view>
+    </view>
+    <view class="content">
+      <view class="tab-cont details-cont" hidden="{{currentTab === '0' ? false : true}}">
+        {{details}}
+      </view>
+      <view class="tab-cont comments-cont" hidden="{{currentTab === '1' ? false : true}}">
+        <view class="score">
+          <text>{{score}}</text>
+          分
+        </view>
+        <view class="comment-list">
+          全部点评：{{commentCount}}条
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="fixed-pop">
+    <view class="call-btn" catchtap="callbtnClick">打电话</view>
+    <view class="comment-btn" catchtap="commentbtnClick">评论</view>
+  </view>
+</view>

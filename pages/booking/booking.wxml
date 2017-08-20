@@ -1,0 +1,43 @@
+<!--booking.wxml-->
+<view class="page">
+  <view class="address-btn" bindtap="chooseAddress">选择地址</view>
+  <form class="form" bindsubmit="formSubmit">
+    <view class="section">
+      <text class="title">联系人姓名</text>
+      <input name="name" value="{{name}}" placeholder="填写联系人姓名"/>
+    </view>
+    <view class="section">
+      <text class="title">联系人电话</text>
+      <input name="phone" value="{{phone}}" placeholder="填写联系人电话"/>
+    </view>
+    <view class="section">
+      <text class="title">预约时间</text>
+      <input name="datetime" value="{{date}} {{time}}" hidden/>
+      <view class="date-time">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker date">{{date}}</view>
+        </picker>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="picker time">{{time}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="section">
+      <text class="title">联系人地址</text>
+      <input name="address" value="{{address}}" placeholder="填写联系人地址"/>
+    </view>
+    <view class="section">
+      <text class="title">备注</text>
+      <textarea name="notes" placeholder="填写备注" />
+    </view>
+    <input name="id" value="{{id}}" hidden/>
+    <input name="amount" value="{{amount}}" hidden/>
+    <view class="ft-bar">
+      <button formType="submit" class="send-btn">立即预约</button>
+    </view>
+  </form>
+  <view class="form-ft">
+    <text class="txt">服务定金￥{{amount}}</text>
+  </view>
+</view>
+

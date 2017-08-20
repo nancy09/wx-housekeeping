@@ -1,0 +1,69 @@
+.page {
+}
+.hd {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  padding:10rpx 20rpx;
+  font-size:30rpx;
+  line-height:32rpx;
+  border-bottom:20rpx solid #eee;
+}
+.notice {
+  width:620rpx;
+}
+.my-address{
+  box-sizing: border-box;
+  width: 80rpx;
+  border-left:1px solid #eee;
+  font-size:26rpx;
+  text-align: center;
+}
+.bd {
+}
+.tab .tab-item{
+  position: relative;
+  display: inline-block;
+  /* box-sizing: border-box; */
+  width: 50%;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:34rpx;
+  text-align: center;
+  border-bottom:1px solid #eee;
+}
+.tab .current text{
+  display: block;
+  margin:0 20%;
+  border-bottom:2rpx solid #1a99fc;
+  color: #1a99fc;
+}
+
+.content{
+  padding: 10rpx;
+}
+.details-cont {
+  font-size: 30rpx;
+}
+
+.comments-cont{
+  font-size: 38rpx;
+}
+.comments-cont .score{
+  padding:20rpx;
+  text-align: center;
+  color:red;
+}
+.comments-cont .score text{
+  font-size: 38rpx;
+}
+.comment-list{
+  color:#666;
+  text-align: center;
+}
+
+ .fixed-pop{
+  position: fixed;
+  bottom:20%;
+  right:20rpx;
+}

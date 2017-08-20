@@ -1,0 +1,10 @@
+<!--detailInfo.wxml-->
+<view class="container">
+  <view class="content">
+    {{detail}}
+  </view>
+  <view class="ft-bar">
+    <view class="amount">合计 ￥{{amount}}</view>
+    <button class="send-btn" catchtap="sendbtnClick">立即预约</button>
+  </view>
+</view>

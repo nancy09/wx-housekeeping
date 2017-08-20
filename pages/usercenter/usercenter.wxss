@@ -1,0 +1,104 @@
+/**usercenter.wxss**/
+.section{
+  position: relative;
+  padding:10rpx 0;
+  border-bottom:20rpx solid #eee;
+}
+.sync-section,
+.section-hd{
+  padding:20rpx 0;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.section-hd:before{
+  display: inline-block;
+  margin-right:20rpx;
+  content: '';
+  width:30rpx;
+  height:30rpx;
+  background:#eee;
+  margin-left:20rpx;
+}
+.section-bd{
+  font-size: 34rpx;
+}
+.section-bd .item{
+  padding:20rpx;
+  border-top:1px solid #eee;
+}
+.section-bd .item:before{
+  display: inline-block;
+  margin-right:20rpx;
+  content: '';
+  width:30rpx;
+  height:30rpx;
+  background:#eee;
+  margin-left:20rpx;
+}
+.arrow{
+  position: absolute;
+  right:20rpx;
+  top:30rpx;
+  width:40rpx;
+  height:40rpx;
+}
+.arrow:before,
+.arrow:after{
+  position: absolute;
+  top:0;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 16rpx dashed transparent;
+}
+.arrow:before{
+  right:2rpx;
+  border-left:16rpx solid #999;
+}
+.arrow:after{
+  right:6rpx;
+  border-left:16rpx solid #fff;
+}
+
+.userinfo-section {
+  display: flex;
+  padding:20rpx;
+}
+.userinfo-section .arrow{
+  top:50rpx;
+}
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right:20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #333;
+  line-height: 120rpx;
+}
+.sync-section:before{
+  display: inline-block;
+  margin-right:20rpx;
+  content: '';
+  width:30rpx;
+  height:30rpx;
+  background:#eee;
+  margin-left:20rpx;
+}
+.active-section .arrow:before{
+  top:6rpx;
+  right:10rpx;
+  /* left:0; */
+  border-left:16rpx dashed transparent; 
+  border-top:16rpx solid #999;
+}
+.active-section .arrow:after{
+  top:0;
+  right:10rpx;
+  /* left:0; */
+  border-left:16rpx dashed transparent; 
+  border-top:16rpx solid #fff;
+}

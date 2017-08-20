@@ -1,0 +1,78 @@
+/* booking.wxss */
+
+.address-btn{
+  padding: 20rpx;
+  color:#666;
+  font-size:26rpx;
+}
+.section{
+  display:flex;
+  flex-flow:row wrap;
+  box-sizing:border-box;
+  padding: 10rpx 20rpx;
+  border-top:1px solid #eee;
+  font-size:26rpx;
+  line-height: 40rpx;
+}
+.section .title{
+  width:160rpx;
+  display: block;
+  color:#333;
+  line-height: 40rpx;
+}
+.section input,
+.date-time,
+.section textarea {
+  width:520rpx;
+  color:#666;
+  height:40rpx;
+  line-height: 40rpx;
+  padding:10rpx;
+}
+
+.date-time{
+  width:auto;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+}
+.date-time picker{
+  margin-right:20rpx;
+}
+
+.section textarea {
+  width:520rpx;
+  height:140rpx;
+  box-sizing: border-box;
+}
+
+.form-ft {
+  margin:20rpx;
+  text-align: right;
+}
+.form-ft .txt{
+  color:red;
+  font-size:28rpx;
+}
+ .ft-bar{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:90rpx;
+  line-height:90rpx;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  box-sizing:border-box;
+  border-top:1px solid #eee;
+  background:#fff;
+}
+.ft-bar .send-btn{
+  width:100%;
+  background:#1a99fc;
+  font-size:32rpx;
+  color:#fff;
+  text-align:center;
+  border-radius: 0;
+} 

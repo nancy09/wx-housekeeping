@@ -1,0 +1,21 @@
+<!--usercenter.wxml-->
+<view class="page">
+  <view class="section userinfo-section" bindtap="bindViewTap">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <view class="arrow"></view>
+  </view>
+  <view class="section sync-section" bindtap="syncClick">同步微信信息</view>
+  <view class="section orders-section {{orderShow ? 'active-section' : ''}}">
+    <view class="section-hd" bindtap="orderItemClick">订单管理<view class="arrow"></view></view>
+    <view class="section-bd" hidden="{{orderShow ? false : true}}">
+      <navigator class="item" url="../orderList/orderList">我的预约</navigator>
+    </view>
+  </view>
+  <view class="section comments-section {{commentShow ? 'active-section' : ''}}">
+    <view class="section-hd" bindtap="commentItemClick">口碑管理<view class="arrow"></view></view>
+    <view class="section-bd" hidden="{{commentShow ? false : true}}">
+      <navigator class="item" url="../comment/comment">我要评论</navigator>
+    </view>
+  </view>
+</view>

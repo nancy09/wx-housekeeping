@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/usercenter/usercenter",
+    "pages/index/index",
+    "pages/comment/comment",
+    "pages/detailList/detailList",
+    "pages/detailInfo/detailInfo",
+    "pages/booking/booking",
+    "pages/introduction/introduction"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "家政服务",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#545454",
+    "selectedColor": "#1a99fc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "服务下单",
+        "iconPath": "./images/order_normal.png",
+        "selectedIconPath": "./images/order_selected.png"
+      },
+      {
+        "pagePath": "pages/introduction/introduction",
+        "text": "客服评价",
+        "iconPath": "./images/order_normal.png",
+        "selectedIconPath": "./images/order_selected.png"
+      },
+      {
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "会员中心",
+        "iconPath": "./images/my_normal.png",
+        "selectedIconPath": "./images/my_selected.png"
+      }
+    ]
+  }
+}

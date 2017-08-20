@@ -1,0 +1,72 @@
+/* detailList.wxss */
+.detailList {
+  background: #fff;
+}
+
+.detailList-item navigator{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  box-sizing:border-box;
+  padding:10rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.checkbox {
+  /* width:20rpx;
+  height:20rpx; */
+}
+.detailList-item image {
+  margin:0 10rpx;
+  width:120rpx;
+  height:120rpx;
+}
+
+.detailList-item .info {
+  width:380rpx;
+  margin-right:10rpx;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  display:block;
+}
+.detailList-item .title{
+  color:#000;
+  font-size:26rpx;
+}
+.detailList-item .content{
+  display:block;
+  color:#666;
+  margin-top:10rpx;
+  font-size:24rpx;
+}
+
+.detailList-item .extend{
+  width:120rpx;
+}
+.detailList-item .price{
+  display:block;
+  width:100%;
+  text-align:right;
+  color:red;
+  font-size:26rpx;
+}
+.detailList-item .quantity{
+  margin-top:20rpx;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  box-sizing:border-box;
+}
+.detailList-item button{
+  width:40rpx;
+  padding:0;
+  line-height:40rpx;
+  font-size: 40rpx;
+  border-radius:8rpx;
+}
+.detailList-item .amount{
+  margin:0 10rpx;
+  font-size:24rpx;
+  line-height:40rpx;
+}
