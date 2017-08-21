@@ -20,6 +20,12 @@ Page({
           phone: res.telNumber,
           address: res.provinceName + res.cityName + res.countyName + res.detailInfo
         })
+      },
+      fail(err) {
+        wx.showModal({
+          title: err.errMsg,
+          showCancel: false
+        })
       }
     })
   },
