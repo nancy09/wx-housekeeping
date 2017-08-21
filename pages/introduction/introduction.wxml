@@ -2,7 +2,7 @@
 <view class="page">
   <view class="hd">
     <view class="notice">{{notice}}</view>
-    <view class="my-address" bindtap="openMap">地图定位</view>
+    <image src="../../images/icon_map.jpg" class="my-address" bindtap="openMap"></image>
   </view>
   <view class="bd">
     <view class="tab">
@@ -29,7 +29,7 @@
     </view>
   </view>
   <view class="fixed-pop">
-    <view class="call-btn" catchtap="callbtnClick">打电话</view>
-    <view class="comment-btn" catchtap="commentbtnClick">评论</view>
+    <image src="../../images/icon_call.jpg" class="call-btn" catchtap="callbtnClick"></image>
+    <image src="../../images/icon_comment.jpg" class="comment-btn" catchtap="commentbtnClick"></image>
   </view>
 </view>

@@ -8,25 +8,7 @@ var interfaces = {
 Page({
     data: {
         serviceList: [],
-        bannerList: [],
-        pageNum: 1
-    },
-    imageOnLoad(ev) {
-        console.log('success image load !!!');
-    },
-    imageOnLoadError() {
-        console.log('图片加载失败')
-    },
-    onReachBottom: function () {
-        this.data.pageNum++;
-        this.reqData();
-        console.log(this.data.pageNum);
-    },
-    onPullDownRefresh: function () {
-        var that = this;
-        that.data.pageNum = 1;
-        that.reqData();
-        that.reqBannerData();
+        bannerList: []
     },
     reqBannerData() {
         var that = this;
@@ -55,24 +37,11 @@ Page({
         //   complete: function () {
         //     // complete
         //     wx.hideToast();
-        //     wx.hideNavigationBarLoading();
-        //     //完成停止加载
         //   }
         // })
     },
     reqData() {
         var that = this;
-        console.log("第" + this.data.pageNum + '页');
-        if (that.data.serviceList.length < 1) {
-            wx.showToast({
-                title: '正在加载中',
-                icon: 'loading',
-                duration: 500
-            })
-        } else {
-            //在标题栏中显示加载
-            // wx.showNavigationBarLoading();
-        }
         // wx.request({
         //   url: interfaces.service,
         //   data: {
@@ -82,13 +51,6 @@ Page({
         //   method: 'GET',
         //   success: function (res) {
             var res = require(interfaces.service);
-            //停止下拉刷新
-            wx.stopPullDownRefresh();
-
-            if (that.data.pageNum == 1) {
-              that.data.serviceList = []
-            }
-
             var serviceList = res.data;
             console.log(serviceList.length);
             that.setData({
@@ -106,8 +68,6 @@ Page({
         //   complete: function () {
         //       // complete
         //       wx.hideToast();
-        //       wx.hideNavigationBarLoading();
-        //       //完成停止加载
         //   }
         // })
     },
@@ -116,11 +76,11 @@ Page({
         // wx.setNavigationBarTitle({
         //     title: '服务下单'
         // })
-        wx.showToast({
-            title: '正在加载中',
-            icon: 'loading',
-            duration: 500
-        })
+        // wx.showToast({
+        //     title: '正在加载中',
+        //     icon: 'loading',
+        //     duration: 500
+        // })
         var that = this;
 
         //调用应用实例的方法获取全局数据
@@ -131,9 +91,6 @@ Page({
             // })
             console.log(userInfo);
         });
-    },
-    onShow: function () {
-        console.log('onShow');
         var that = this;
         that.reqBannerData();
         that.reqData();

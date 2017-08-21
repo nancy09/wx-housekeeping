@@ -5,7 +5,7 @@
   autoplay="auto" interval="5000" duration="2000" class="bannerList">
     <swiper-item class="bannerList-item" wx:for="{{bannerList}}" wx:for-item="item" wx:key="unique">
       <!-- <navigator url="./detailList/detailList?id={{ item.id }}"  hover-class="none"> -->
-        <image src="./images/order_normal.png" mode="aspectFit" class="bannerList-pic"></image>
+        <image src="{{item.thumb}}" mode="aspectFit" class="bannerList-pic"></image>
         <text class="bannerList-live">服务下单</text>
       <!-- </navigator> -->
     </swiper-item>
@@ -14,11 +14,12 @@
   <view class="serviceList">
     <view class="serviceList-item" wx:for="{{serviceList}}" wx:for-item="item" wx:key="unique">
       <navigator url="../detailList/detailList?id={{ item.id }}" hover-class="none">
-          <image src="./images/order_normal.png" mode="aspectFill" bindload="imageOnLoad" binderror="imageOnLoadError" class="fade_in"></image>
+          <image src="{{item.thumb}}" mode="aspectFill" class="fade_in"></image>
           <text class="service-title">{{item.title}}</text>
       </navigator>
     </view>
   </view>
 
-  <contact-button type="default-dark" size="27" session-from="weapp"></contact-button>
+  <contact-button type="default-dark" size="27" session-from="weapp">
+  </contact-button>
 </view>

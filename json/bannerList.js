@@ -1,11 +1,11 @@
 var json = {
   "code": "success",
   "data": [{
-    "thumb": "../../images/order_noraml.png"
+    "thumb": "../../images/ad_1.jpeg"
   }, {
-    "thumb": "../../images/order_noraml.png"
+    "thumb": "../../images/ad_2.jpeg"
     }, {
-      "thumb": "../../images/order_noraml.png"
+      "thumb": "../../images/ad_3.jpeg"
     }]
 }
 module.exports = json;

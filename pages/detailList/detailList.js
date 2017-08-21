@@ -14,12 +14,6 @@ Page({
     e.currentTarget.dataset.checked = !e.currentTarget.dataset.checked;
     console.log(e.currentTarget.dataset.checked);
   },
-  imageOnLoad(ev) {
-    console.log('success image load !!!');
-  },
-  imageOnLoadError() {
-    console.log('图片加载失败')
-  },
   onReachBottom: function () {
     this.data.pageNum++;
     this.reqData();
@@ -86,11 +80,11 @@ Page({
     // wx.setNavigationBarTitle({
     //     title: '服务下单'
     // })
-    wx.showToast({
-      title: '正在加载中',
-      icon: 'loading',
-      duration: 500
-    })
+    // wx.showToast({
+    //   title: '正在加载中',
+    //   icon: 'loading',
+    //   duration: 500
+    // })
   },
   onShow: function () {
     console.log('onShow');

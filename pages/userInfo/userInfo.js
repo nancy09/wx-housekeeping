@@ -20,9 +20,6 @@ Page({
   },
   reqData() {
     var that = this;
-    //在标题栏中显示加载
-    wx.showNavigationBarLoading();
-    
     // wx.request({
     //   url: interfaces.userInfo,
     //   data: {
@@ -50,8 +47,6 @@ Page({
     //   complete: function () {
     //       // complete
     //       wx.hideToast();
-    //       wx.hideNavigationBarLoading();
-    //       //完成停止加载
     //   }
     // })
   },

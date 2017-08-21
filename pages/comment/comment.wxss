@@ -15,8 +15,8 @@
   position: absolute;
   right:30rpx;
   top:20rpx;
-  width:500rpx;
-  height: 50rpx;
+  width:146rpx;
+  height: 24rpx;
 }
 .star-box:before{
   position: absolute;

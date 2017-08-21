@@ -6,6 +6,7 @@ var interfaces = {
 Page({
   data: {
     detail: '',
+    images: [],
     amount: 0,
     id: '',
     count: 0
@@ -29,7 +30,9 @@ Page({
     var data = res.data;
     let amount = data.price * that.data.count;
     that.setData({
-      detail: data.detail
+      detail: data.detail,
+      images: data.images,
+      amount: amount
     })
 
     //   },
@@ -49,19 +52,16 @@ Page({
     // })
   },
   onLoad: function (options) {
-    wx.showToast({
-      title: '正在加载中',
-      icon: 'loading',
-      duration: 500
-    })
+    // wx.showToast({
+    //   title: '正在加载中',
+    //   icon: 'loading',
+    //   duration: 500
+    // })
     this.setData({
       id: options.id,
-      count: options.count
+      count: options.count || 1
     })
-  },
-  onShow: function () {
-    var that = this;
-    that.reqData();
+    this.reqData();
   },
   onShareAppMessage: function () {
     return {

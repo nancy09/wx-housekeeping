@@ -1,2 +1,6 @@
 <!--orderList.wxml-->
-<text>orderList.wxml</text>
+<view class="page">
+  <view class="column">
+    <view class="title">{{}}</view>
+  </view>
+</view>

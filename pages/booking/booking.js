@@ -140,11 +140,11 @@ Page({
     // })
   },
   onLoad: function (options) {
-    wx.showToast({
-      title: '正在加载中',
-      icon: 'loading',
-      duration: 500
-    })
+    // wx.showToast({
+    //   title: '正在加载中',
+    //   icon: 'loading',
+    //   duration: 500
+    // })
     this.setData({
       id: options.id,
       amount: options.amount || 0

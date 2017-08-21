@@ -1,8 +1,12 @@
 <!--detailInfo.wxml-->
-<view class="container">
+<view class="page">
   <view class="content">
     {{detail}}
   </view>
+  <block wx:for="{{images}}" wx:key="index">
+    <image src="{{item}}" mode="aspectFill" class="fade_in"></image>
+  </block>
+  
   <view class="ft-bar">
     <view class="amount">合计 ￥{{amount}}</view>
     <button class="send-btn" catchtap="sendbtnClick">立即预约</button>

@@ -3,8 +3,7 @@
   <form class="form" bindsubmit="formSubmit">
     <view class="section">
       <text class="title">评分</text>
-      <view class="star-box">
-      </view>
+      <image class="star-box" src="../../images/icon_star.png"></image>
       <input name="score" value="{{score}}" hidden/>
     </view>
     <view class="section-textarea">

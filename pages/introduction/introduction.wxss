@@ -11,13 +11,13 @@
 }
 .notice {
   width:620rpx;
+  margin:10rpx;
 }
 .my-address{
   box-sizing: border-box;
-  width: 80rpx;
-  border-left:1px solid #eee;
-  font-size:26rpx;
-  text-align: center;
+  margin:10rpx;
+  width:50rpx;
+  height:50rpx;
 }
 .bd {
 }
@@ -64,6 +64,19 @@
 
  .fixed-pop{
   position: fixed;
-  bottom:20%;
+  bottom:40rpx;
   right:20rpx;
+  width:50rpx;
+}
+.call-btn,
+.comment-btn {
+  display:block;
+  margin-bottom:20rpx;
+  width:50rpx;
+  height:50rpx;
+}
+.comment-btn{
+  margin-right:10rpx;
+  width:62rpx;
+  height:50rpx;
 }

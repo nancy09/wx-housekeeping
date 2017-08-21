@@ -12,7 +12,8 @@
   border-bottom: 1px solid #eee;
 }
 
-.checkbox {
+checkbox {
+  margin-top: 35rpx;
   /* width:20rpx;
   height:20rpx; */
 }

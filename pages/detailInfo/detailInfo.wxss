@@ -1,6 +1,7 @@
 /* detailInfo.wxss */
 .content{
-  padding: 20rpx;
+  padding: 40rpx 20rpx;
+  font-size:26rpx;
 }
 
 .ft-bar{

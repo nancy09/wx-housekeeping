@@ -4,7 +4,7 @@
     <view class="detailList-item" wx:for="{{detailList}}" wx:for-item="item" wx:key="unique">
       <navigator url="../detailInfo/detailInfo?id={{ item.id }}" hover-class="none">
         <checkbox value="{{item.id}}" checked="{{item.checked}}" data-id="{{item.id}}" data-checked="{{item.checked}}" catchtap="checkboxChange" />
-        <image src="./images/icon_temp.png" mode="aspectFill" bindload="imageOnLoad" binderror="imageOnLoadError" class="fade_in"></image>
+        <image src="{{item.thumb}}" mode="aspectFill" class="fade_in"></image>
         <view class="info">
           <text class="title">{{item.title}}</text>
           <text class="content">{{item.content}}</text>
